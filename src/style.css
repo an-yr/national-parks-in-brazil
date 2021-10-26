@@ -12,7 +12,14 @@ body {
   margin: 0;
   text-align: center;
 }
-/* Menu de navegação */
+h1 {
+  color: white;
+  font-size: 90px;
+}
+h2 {
+  color: var(--primary-color);
+  font-size: 40px;
+}
 li {
   list-style: none;
 }
@@ -23,38 +30,27 @@ a {
 a:hover {
   color: var(--primary-color);
 }
+
 /* Capa de entrada do site */
 .parkBrazil {
+  background: var(--secondary-color);
   height: 500px;
   width: 100%;
-  background: var(--secondary-color);
-}
-.nationalPark {
-  align-self: center;
-  color: white;
-}
-.nationalPark h1 {
-  font-size: 90px;
-}
-/* especificações do subtitulos - título uc  e learn more */
-h2 {
-  color: var(--primary-color);
-  font-size: 40px;
 }
 /* Seção sobre parques nacionais e botão */
 .info-UC {
   flex-basis: 50%;
 }
 button {
-  border-radius: 25px;
-  border: transparent;
   background-color: var(--button-color);
+  border: transparent;
+  border-radius: 25px;
   color: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
 }
 button:hover {
-  color: rgba(0, 0, 0, 0.6);
   background: var(--primary-color);
+  color: rgba(0, 0, 0, 0.6);
 }
 /* galeria de fotos */
 .photo {
