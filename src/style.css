@@ -20,6 +20,9 @@ h2 {
   color: var(--primary-color);
   font-size: 40px;
 }
+p {
+  margin: 0;
+}
 li {
   list-style: none;
 }
@@ -30,8 +33,7 @@ a {
 a:hover {
   color: var(--primary-color);
 }
-
-/* Capa de entrada do site */
+/* capa do site */
 .parkBrazil {
   background: var(--secondary-color);
   height: 500px;
@@ -63,30 +65,25 @@ button:hover {
 .photoPark {
   position: relative;
 }
-
 .photoPark,
 .photoGal {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .h-1 {
   grid-row: span 1;
 }
-
 .h-2 {
   grid-row: span 2;
 }
-
 .w-1 {
   grid-column: span 1;
 }
-
 .w-2 {
   grid-column: span 2;
 }
-/* hover das imagens da galeria */
+/* hover das fotos */
 .name {
   position: absolute;
   top: 0;
