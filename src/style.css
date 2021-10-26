@@ -12,7 +12,6 @@ body {
   margin: 0;
   text-align: center;
 }
-
 /* Menu de navegação */
 li {
   list-style: none;
@@ -39,51 +38,24 @@ a:hover {
 }
 /* especificações do subtitulos - título uc  e learn more */
 h2 {
-  /* margin: 50px 0 0 0; */
   color: var(--primary-color);
   font-size: 40px;
-  letter-spacing: 2px;
 }
 /* Seção sobre parques nacionais e botão */
-/* .uc {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  height: 500px;
-  padding: 10px;
-} */
-
-/* .brazilianUc {
-  margin: 5px;
-  font-size: 16px;
+.info-UC {
   flex-basis: 50%;
-  justify-content: center;
-  margin: 0;
-  padding: 20px;
-  line-height: 24px; */
-/* } */
-
+}
 button {
-  /* padding: 15px 20px; */
   border-radius: 25px;
   border: transparent;
   background-color: var(--button-color);
   color: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
 }
-
 button:hover {
   color: rgba(0, 0, 0, 0.6);
-  background: #ff7676;
+  background: var(--primary-color);
 }
-
-/* titulo da galeria */
-.parkTitle h2 {
-  color: #ff7676;
-  font-size: 50px;
-  padding: 0;
-}
-
 /* galeria de fotos */
 .photo {
   display: grid;
