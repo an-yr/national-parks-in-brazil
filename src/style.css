@@ -1,0 +1,180 @@
+body {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+a {
+  color: #466c95;
+  text-decoration: none;
+}
+
+/* Menu de navegação */
+.header {
+  background: linear-gradient(to top, #f0fcf0 0%, white 100%);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  margin-left: 50px;
+}
+
+li {
+  list-style: none;
+}
+/* Capa de entrada do site */
+.parkBrazil {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  width: 100%;
+  background: #5dae8b;
+}
+.nationalPark {
+  align-self: center;
+  font-size: 60px;
+  color: white;
+  font-weight: lighter;
+}
+/* especificações do subtitulos - título uc  e learn more */
+h2 {
+  margin: 50px 0 0 0;
+  color: #ff7676;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+/* Seção sobre parques nacionais e botão */
+.uc {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 500px;
+  padding: 10px;
+}
+
+.brazilianUc {
+  margin: 5px;
+  font-size: 16px;
+  flex-basis: 50%;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  line-height: 24px;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: transparent;
+  background-color: #f6f49d;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background: #ff7676;
+}
+
+/* titulo da galeria */
+.parkTitle h2 {
+  color: #ff7676;
+  font-size: 50px;
+  padding: 0;
+}
+
+/* galeria de fotos */
+.photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto 20px auto;
+  grid-gap: 12px;
+  padding: 12px;
+}
+.photoPark {
+  position: relative;
+}
+
+.photoPark,
+.photoGal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+/* hover das imagens da galeria */
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.name:hover {
+  opacity: 1;
+}
+.photoA {
+  color: white;
+}
+
+/* seção do learn more - rodapé */
+.learn {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0;
+  font-size: 18px;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+}
+
+.learnMore {
+  display: flex;
+  background-color: #f6f49d;
+  border-radius: 40px;
+  padding: 20px 15px;
+  margin: 10px;
+}
+.learn li {
+  margin-left: 50px;
+}
+
+.author {
+  padding: 20px;
+  margin: 20px;
+  font-size: 14px;
+}
