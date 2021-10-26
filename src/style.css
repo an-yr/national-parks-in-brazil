@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #ff7676;
+  --secondary-color: #5dae8b;
+  --tertiary-color: #466c95;
+  --button-color: #f6f49d;
+}
 body {
   background-color: white;
   color: rgba(0, 0, 0, 0.6);
@@ -6,80 +12,63 @@ body {
   margin: 0;
   text-align: center;
 }
-a {
-  color: #466c95;
-  text-decoration: none;
-}
 
 /* Menu de navegação */
-.header {
-  background: linear-gradient(to top, #f0fcf0 0%, white 100%);
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  font-size: 18px;
-  justify-content: center;
-}
-
-.menu {
-  display: flex;
-}
-.menu li {
-  margin-left: 50px;
-}
-
 li {
   list-style: none;
 }
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color);
+}
 /* Capa de entrada do site */
 .parkBrazil {
-  display: flex;
-  justify-content: center;
-  height: 550px;
+  height: 500px;
   width: 100%;
-  background: #5dae8b;
+  background: var(--secondary-color);
 }
 .nationalPark {
   align-self: center;
-  font-size: 60px;
   color: white;
-  font-weight: lighter;
+}
+.nationalPark h1 {
+  font-size: 90px;
 }
 /* especificações do subtitulos - título uc  e learn more */
 h2 {
-  margin: 50px 0 0 0;
-  color: #ff7676;
-  font-size: 50px;
+  /* margin: 50px 0 0 0; */
+  color: var(--primary-color);
+  font-size: 40px;
   letter-spacing: 2px;
 }
 /* Seção sobre parques nacionais e botão */
-.uc {
+/* .uc {
   display: flex;
   align-items: center;
   margin: 0 auto;
   height: 500px;
   padding: 10px;
-}
+} */
 
-.brazilianUc {
+/* .brazilianUc {
   margin: 5px;
   font-size: 16px;
   flex-basis: 50%;
   justify-content: center;
   margin: 0;
   padding: 20px;
-  line-height: 24px;
-}
+  line-height: 24px; */
+/* } */
 
 button {
-  padding: 15px 20px;
-  border-radius: 30px;
+  /* padding: 15px 20px; */
+  border-radius: 25px;
   border: transparent;
-  background-color: #f6f49d;
-  box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
+  background-color: var(--button-color);
   color: rgba(0, 0, 0, 0.6);
-  font-size: 18px;
-  font-weight: bold;
   transition: all 200ms ease-in-out;
 }
 
