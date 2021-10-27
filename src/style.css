@@ -27,17 +27,19 @@ li {
   list-style: none;
 }
 a {
-  color: var(--tertiary-color);
+  color: var(--tertiary-color) !important;
   text-decoration: none;
 }
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 /* capa do site */
 .parkBrazil {
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   height: 500px;
   width: 100%;
+  background-image: url(images/floresta.jpg);
+  background-size: cover;
 }
 /* Seção sobre parques nacionais e botão */
 .info-UC {
@@ -101,7 +103,7 @@ button:hover {
   opacity: 1;
 }
 .photoA {
-  color: white;
+  color: white !important;
 }
 /* seção do learn more - rodapé */
 .link-learn-more {
