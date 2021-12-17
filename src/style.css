@@ -26,25 +26,15 @@ p {
 li {
   list-style: none;
 }
-a {
-  color: var(--tertiary-color) !important;
+nav a {
+  color: white !important;
   text-decoration: none;
+  font-size: 16px;
 }
 a:hover {
   color: var(--primary-color) !important;
 }
-/* capa do site */
-.parkBrazil {
-  /* background: var(--secondary-color); */
-  height: 500px;
-  width: 100%;
-  background-image: url(images/floresta.jpg);
-  background-size: cover;
-}
-/* Seção sobre parques nacionais e botão */
-.info-UC {
-  flex-basis: 50%;
-}
+
 button {
   background-color: var(--button-color);
   border: transparent;
@@ -56,7 +46,18 @@ button:hover {
   background: var(--primary-color);
   color: rgba(0, 0, 0, 0.6);
 }
-/* galeria de fotos */
+img {
+  border-radius: 5px;
+}
+.parkBrazil {
+  height: 500px;
+  width: 100%;
+  background-image: url(images/floresta.jpg);
+  background-size: cover;
+}
+.info-UC {
+  flex-basis: 50%;
+}
 .photo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -105,8 +106,25 @@ button:hover {
 .photoA {
   color: white !important;
 }
-/* seção do learn more - rodapé */
 .link-learn-more {
   background-color: var(--button-color);
   border-radius: 35px;
+}
+a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+footer a {
+  color: var(--primary-color);
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .photo {
+    grid-gap: 3px;
+  }
 }
